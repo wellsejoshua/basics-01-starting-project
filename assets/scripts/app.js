@@ -69,7 +69,13 @@ multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
 
 
-
+/*What I learned
+Learned operators, variables, and constants
+learned about arrays/objects and functions
+learned about how to pass data into functions
+learnd syntax
+learned about optimizing scripts for shipping best code to users (async/defer)
+*/
 
 
 
