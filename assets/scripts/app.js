@@ -28,16 +28,17 @@ function writeToLog(
 }
 
 function calculateResult(calculationType) {
+  const enteredNumber = getUserNumberInput();
   if (
     calculationType !== 'ADD' &&
     calculationType !== 'SUBTRACT' &&
     calculationType !== 'MULTIPLY' &&
-    calculationType !== 'DIVIDE'
+    calculationType !== 'DIVIDE' ||
+    !enteredNumber
   ) {
     return;
   }
 
-  const enteredNumber = getUserNumberInput();
   const initialResult = currentResult;
   let mathOperator;
   if (calculationType === 'ADD') {
@@ -79,7 +80,6 @@ addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
-
 
 /*What I learned
 Learned operators, variables, and constants
